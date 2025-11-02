@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const API_KEY = 'b067a15f';
+const API_KEY = process.env.REACT_APP_OMDB_API_KEY;;
 
 function MovieSearchApp() {
   const [searchQuery, setSearchQuery] = useState('');
